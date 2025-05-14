@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    width: 100%;
+    font-family: "Nunito", sans-serif;
+    font-size: 25px;
+    background-color: #B9D9EB;
+}
+
+#container {
+    width: 80%;
+    margin-left: 20px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header {
+    width: 55%;
+    text-align: center;
+    background-color: #45B1E8;
+    color: #246BCE;
+    align-content: center; 
+    margin: 0 auto;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 50px;
+}
+
+#descripcion {
+    text-align: center;
+    font-size: 30px;
+}
+
+form {
+ opacity: 0.9;
+  background-color: #89CFF0;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+form> fieldset {
+    border-radius: 20px;
+   
+}
+
+input, label {
+    font-family: inherit;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.telefono {
+    margin-right: 105px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"]
+ {
+    width: 70%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: inherit;
+    margin-left: 50px;
+    
+}
+input[type="checkbox"],
+input[type="radio"] {
+    font-family: inherit;
+    font-size: 80px;
+}
+textarea {
+    width: 98%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: inherit;
+
+}
+::placeholder {
+    font-family: inherit;
+    font-size: 20px;
+    border-radius: 50px;
+    
+}
+
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+button:hover {
+    background-color: transparent;
+}

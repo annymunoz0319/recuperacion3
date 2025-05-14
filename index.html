@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petición de cita</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <div id="container"></div>
+    <header>
+        <h1 id="titulo">Petición de Cita</h1>
+        <p id="descripcion">Déjanos el motivo de tu consulta</p>
+    </header>
+
+    <form id="consultas">
+        <label for="nombre" id="label_nombre" required>Nombre completo:</label>
+        <input id="nombre" type="text" placeholder="Nombre completo" maxlength="40"><br>
+        <label class="telefono" for="telefono" id="label_telefono" required>Teléfono:</label>
+        <input id="telefono" type="tel" placeholder="Número de Teléfono"><br>
+        <label for="email" id="label_email" required>Correo Electrónico:</label>
+        <input id="email" type="email" placeholder="Tu mejor correo">
+
+        <fieldset>
+            <legend>Qué días va mejor para la cita? :</legend>
+            <ul>
+                <input type="checkbox" id="lun" name="horario" value="1">Lun</input>
+                <input type="checkbox" id="mar" name="horario" value="2">Mar
+                <input type="checkbox" checked id="mié" name="horario" value="3">Mié
+                <input type="checkbox" id="jue" name="horario" value="4">Jue
+                <input type="checkbox" id="vie" name="horario" value="5">Vie
+                <input type="checkbox" id="sab" name="horario" value="6">Sab
+            </ul>
+
+        </fieldset>
+        <fieldset>
+            <legend>Qué horario va mejor para la cita? :</legend>
+            <ul>
+                <input type="radio" checked name="mañana" id="mañana">
+                <label for="mañana">Mañana</label>
+                <input type="radio" name="tarde" id="tarde">
+                <label for="tarde">Tarde</label>
+                <input type="radio" name="noche" id="noche">
+                <label for="noche">Noche</label>
+            </ul>
+        </fieldset>
+
+        Consulta: <br>
+        <textarea id="motivo" rows="3" cols="50" placeholder="Indica el motivo de tu consulta"></textarea>
+
+        <p><button type="submit" id="enviar">Enviar</button></p>
+
+
+
+
+    </form>
+    
+    </main>
+    </div>
+</body>
+
+</html>
